@@ -1,3 +1,64 @@
 body{
+	background: black;
+} 
+
+#entr{
 	text-align: center;
+}
+
+
+#q{
+	margin-top: 250px;
+	font-size : 50px;
+	color: white;
+}
+
+#yes {
+	border: solid black 1px;
+	text-decoration: none;
+ 	font-size: 16px;
+  	margin: 4px 2px;
+  	padding: 15px 32px;
+  	border-radius: 12px;
+  	font-weight: 900;
+
+}
+
+#no{
+	border: solid black 1px;
+	text-decoration: none;
+ 	font-size: 16px;
+  	margin: 4px 2px;
+  	padding: 15px 32px;
+  	border-radius: 12px;
+  	font-weight: 900;
+  	/*cursor: not-allowed;*/
+
+}
+
+#info{
+	text-align: center;
+	margin-top: 150px
+
+}
+
+label{
+	color: white;
+	font-size : 30px;
+}
+
+input{
+	padding: 10px 20px;
+	font-size: 20px;
+}
+
+#enter{
+	border: solid black 1px;
+	text-decoration: none;
+ 	font-size: 16px;
+  	margin: 4px 2px;
+  	padding: 15px 32px;
+  	border-radius: 12px;
+  	font-weight: 900;
+
 }
