@@ -6,12 +6,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+	<!-- First Part -->
 	<div id='info'>
 	<label> Name </label> <input type="text"  id ='name' required="required"> <br><br>
 	<label> Age  </label> <input type="number" id ='age' required="required"> <br><br><br><br>
 	<button id='enter'> Enter </button>
 	</div>
 
+	<!-- second part -->
 	<div id="bts" style="display: none;">
 		<h1 style="color: white; text-align: center; font-size: 60px; margin-top: 118px" > Click on the button to start </h1> <br><br>
 		<button id='b1' class="b" style="display: none;"> START </button>
@@ -21,6 +23,8 @@
 
 	</div>
 
+	<!-- third part -->
+
 	<div id ="count" style="display: none; text-align: center;">
 
 	<h1 style="color: white; margin-top: 200px "> Wait for 10 seconds </h1>
@@ -28,13 +32,67 @@
 
     </div>
 
+    <!-- fourth part -->
 
     <div id='fun' style="display: none; text-align: center;">
 
     	<h1 style="color: white; text-align: center; font-size: 40px; margin-top: 118px"> Write a fun fact about you </h1>
-    <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required" style=" padding: 0px 45px; margin-top: 58px; border: solid #f09d05 4px;"></textarea> <br><br>
-    	<button id = 'add' style="text-align: center"> Add </button>
+    <textarea id="comment" cols="45" rows="8" maxlength="65525" required="required" style=" padding: 0px 45px; margin-top: 58px; border: solid #f09d05 4px;"></textarea> <br><br>
+    	<button id = 'add' style="text-align: center"> Add </button>   	
+    </div>
+   
+    <!-- fifth part-->
+
+    <div id = 'fortune' style="text-align: center; display: none; margin-top: 118px;">
+    	<h1 style="color: white; font-size: 53px;"> Fortune teller </h1>
+    	<p style="color: white; font-size: 20px; margin: 0px;">Click To see what it predicts </p><br><br><br>
+    	<button id = 'click'> Click Here </button> <br><br><br>
+    	<span id="spn" style="border:solid orange 2px; padding: 19px 245px; background: white; font-size: 26px;"></span><br>
+
+
+    	<button id="next" style="margin-top: 156px;"> NEXT </button>
     	
+    </div>
+
+    <!-- sixth part -->
+
+    <div id = 'quiz' style="color: white; text-align: center; display: none;">
+
+    	<h1 style="font-size: 51px"> Finaaally it's time to actually play</h1>
+    	<h3>Try answering the following questions . . . prove you're smart</h3>
+
+    	<div class="questions" style="border: solid orange 2px; margin:50px; border-radius: 19px; background: #856d3a;">
+    	<p style="font-size: 34px; padding: 18px 175px; margin: 0px;"> What is your name ? </p><br>
+    	<input type="radio" name="choice"> <span id ='choice1' style="font-size: 22px;"></span>
+    	<input type="radio" name="choice"  value='Sara'> <span id ='choice2' style="font-size: 22px;"> Sara </span>
+    	<input type="radio" name="choice"  value='Sara is amazing'> <span id ='choice3' style="font-size: 22px;"> Sara is amazing </span>    	
+        </div>
+
+
+        <div class="questions" style="border: solid orange 2px; margin:50px; border-radius: 19px; background: #856d3a;">
+    	<p style="font-size: 34px; padding: 18px 175px; margin: 0px;"> 2 + 2 = ? </p><br>
+    	<input type="radio" name="choice1"> <span id ='cho1' style="font-size: 37px;"> 6 </span>
+    	<input type="radio" name="choice1"> <span id ='cho2' style="font-size: 37px;"> 4 </span>
+    	<input type="radio" name="choice1"> <span id ='cho3' style="font-size: 37px;"> 22 </span>    	
+        </div>
+      
+
+        <div class="questions" style="border: solid orange 2px; margin:50px; border-radius: 19px; background: #856d3a;">
+    	<p style="font-size: 34px; padding: 18px 175px; margin: 0px;"> What is tokyo called ? </p><br>
+    	<input type="radio" name="choice2"> <span id ='cho4' style="font-size: 22px;"> tokyo </span>
+    	<input type="radio" name="choice2"> <span id ='cho5' style="font-size: 22px;"> Tokyo </span>
+    	<input type="radio" name="choice2"> <span id ='cho6' style="font-size: 22px;"> Apparently Tokyo </span>    	
+        </div> <br>
+        <button id='ne'> Next </button>
+
+    </div>
+
+    <!-- seventh part -->
+    <div id="predict" style="color: white; text-align: center; display: none;">
+    	<h1 style=" text-align: center; font-size: 40px; margin-top: 118px"> Predict the word</h1>
+    	<input type="text" id="preW"> <br><br>
+    	<button id='ad'> Add </button> <br><br>
+    	<div id="one" style="text-align: center; color: black;"></div> &nbsp; &nbsp; <div id='two'style="text-align: center; color: black;"></div>
     </div>
 
 <script type="text/javascript" src ="script.js"></script>
@@ -43,3 +101,4 @@
 
 <!-- <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea> -->
 <!-- margin-left: 469px; -->
+<!--  name="comment"  -->

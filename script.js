@@ -4,6 +4,8 @@ var player = {
 	fact : ""
 }
 
+var result = 0;
+
 var random = function(array){
   var randomIndex = Math.floor(Math.random() * array.length)
   return array[randomIndex]
@@ -118,17 +120,55 @@ $('#b4').click(function(){
 $('#add').click( function (){
 	player.fact = $('textarea').val()
 	$('#fun').remove()
+	$('#fortune').css('display' , 'block')
 })
 
 
+var sub = ['you' , 'your life' , 'the neighbor' , 'lots of money' , 'a car' , 'cats' , 'RBK' , 'naruto']
+var verb = ['will step on' , 'will eat' , 'is going to destroy' , 'will eat' , 'will jump on' , 'will punch' , 'is going to kill' , 'will fight']
+var obj = ['you' , 'your reputation' , 'tiolet paper' , 'shoes' , 'a mountain' , 'banks' , 'us' , 'villians']
 
 
+$('#click').click(function(){
+	console.log('hi')
+	$('#spn').empty()
+	$('#spn').text(random(sub) + " " + random(verb) + " " + random(obj))
+})
 
 
+$('#next').click(function(){
+	$('#fortune').remove()
+	$('#quiz').css('display', 'block')
+	$('#choice1').text(player.name)
+})
 
+$('#ne').click(function(){
+	$('#quiz').remove();
+	$('#predict').css('display' , 'block');
+})
 
+var words =['food' , 'Sara' , 'Danger' , 'lovely', 'interesting' , 'friday' , 'sleep' , 'job']
 
+$('#ad').click(function(){
+	$('#one').empty()
+	$('#two').empty()
 
+	$('#one').text( $('#preW').val() );
+	$('#two').text( random(words) );
+	$('#preW').val('')
+
+	if($('#one').text() === $('#preW').val()){
+		setTimeout(function(){
+			alert('WOOOOOOOW !!')} , 1000)
+
+	} else if($('#one').text() !== $('#preW').val()){
+		setTimeout(function(){
+			alert('Are you an idiot ?')} , 1000)
+		
+	}
+
+	
+})
 
 
 

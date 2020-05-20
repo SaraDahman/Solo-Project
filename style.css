@@ -79,7 +79,7 @@ label{
   	margin: 4px 2px;
   	padding: 12px 24px;
   	border-radius: 12px;
-  	font-weight: 900;
+  	font-weight: 700;
   	cursor: pointer;
   	border : solid grey 2px;
   	margin-top: 80px;
@@ -126,15 +126,80 @@ label{
 
 #add{
 
-	border: solid white 1px;
+	border: solid orange 1px;
 	text-decoration: none;
  	font-size: 16px;
   	margin: 4px 2px;
   	padding: 8px 18px;
   	border-radius: 12px;
-  	font-weight: 900;
+  	font-weight: 700;
   	cursor: pointer;
 
 }
 
 
+#click{
+
+	border: solid orange 1px;
+	text-decoration: none;
+ 	font-size: 13px;
+  	margin: 4px 2px;
+  	padding: 7px 14px;
+  	border-radius: 12px;
+  	font-weight: 900;
+  	cursor: pointer;
+}
+
+#next{
+
+	border: solid orange 1px;
+	text-decoration: none;
+ 	font-size: 13px;
+  	margin: 4px 2px;
+  	padding: 8px 18px;
+  	border-radius: 12px;
+  	font-weight: 700;
+  	cursor: pointer;
+	
+}
+
+#ne{
+	border: solid orange 1px;
+	text-decoration: none;
+ 	font-size: 13px;
+  	margin: 4px 2px;
+  	padding: 8px 18px;
+  	border-radius: 12px;
+  	font-weight: 700;
+  	cursor: pointer;
+}
+
+#ad{
+
+	border: solid orange 1px;
+	text-decoration: none;
+ 	font-size: 13px;
+  	margin: 4px 2px;
+  	padding: 8px 18px;
+  	border-radius: 12px;
+  	font-weight: 700;
+  	cursor: pointer;
+}
+
+#one{
+  display:inline-block;
+  vertical-align:top;
+  width : 19%;
+  padding: 20px 0px;
+  border: solid orange 1px;
+  background: white;
+}
+
+ #two{
+  display:inline-block;
+  vertical-align:top;
+  width : 19%;
+  padding: 20px 0px;
+  border: solid orange 1px;
+  background: white;
+ }
