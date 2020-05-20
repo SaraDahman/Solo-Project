@@ -7,12 +7,39 @@
 </head>
 <body>
 	<div id='info'>
-	<label> Name </label> <input type="text"  id ='name'> <br><br>
-	<label> Age &nbsp; </label> <input type="text" id ='age'> <br><br>
+	<label> Name </label> <input type="text"  id ='name' required="required"> <br><br>
+	<label> Age  </label> <input type="number" id ='age' required="required"> <br><br><br><br>
 	<button id='enter'> Enter </button>
 	</div>
 
+	<div id="bts" style="display: none;">
+		<h1 style="color: white; text-align: center; font-size: 60px; margin-top: 118px" > Click on the button to start </h1> <br><br>
+		<button id='b1' class="b" style="display: none;"> START </button>
+		<button id='b2' class="b"> START </button>
+		<button id='b3' class="b" style="display: none;"> START </button>
+		<button id='b4' class="b" style="display: none;"> START </button>
+
+	</div>
+
+	<div id ="count" style="display: none; text-align: center;">
+
+	<h1 style="color: white; margin-top: 200px "> Wait for 10 seconds </h1>
+	<div id = 'countDown' style="color: white; font-size: 200px"> 10 </div>
+
+    </div>
+
+
+    <div id='fun' style="display: none; text-align: center;">
+
+    	<h1 style="color: white; text-align: center; font-size: 40px; margin-top: 118px"> Write a fun fact about you </h1>
+    <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required" style=" padding: 0px 45px; margin-top: 58px; border: solid #f09d05 4px;"></textarea> <br><br>
+    	<button id = 'add' style="text-align: center"> Add </button>
+    	
+    </div>
 
 <script type="text/javascript" src ="script.js"></script>
 </body>
 </html>
+
+<!-- <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea> -->
+<!-- margin-left: 469px; -->

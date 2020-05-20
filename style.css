@@ -1,5 +1,6 @@
 body{
 	background: black;
+	/*background-image: url('dark-low-poly-background_1048-7971.jpg')*/
 } 
 
 #entr{
@@ -14,24 +15,26 @@ body{
 }
 
 #yes {
-	border: solid black 1px;
+	border: solid orange 3px;
 	text-decoration: none;
  	font-size: 16px;
   	margin: 4px 2px;
-  	padding: 15px 32px;
+  	padding: 15px 28px;
   	border-radius: 12px;
   	font-weight: 900;
+  	cursor: pointer;
 
 }
 
 #no{
-	border: solid black 1px;
+	border: solid orange 3px;
 	text-decoration: none;
  	font-size: 16px;
   	margin: 4px 2px;
   	padding: 15px 32px;
   	border-radius: 12px;
   	font-weight: 900;
+  	cursor: pointer;
   	/*cursor: not-allowed;*/
 
 }
@@ -45,11 +48,28 @@ body{
 label{
 	color: white;
 	font-size : 30px;
+	margin-right: 19px;
 }
 
-input{
+/*input{
 	padding: 10px 20px;
 	font-size: 20px;
+	margin-right: 88px;
+}*/
+
+#name{
+	padding: 5px 5px;
+	font-size: 20px;
+	margin-right: 78px;
+	border: solid #f09d05 3px;
+}
+
+#age{
+	padding: 6px 5px;
+	font-size: 20px;
+	margin-right: 78px;
+	margin-left: 21px;
+	border: solid #f09d05 3px;
 }
 
 #enter{
@@ -57,8 +77,64 @@ input{
 	text-decoration: none;
  	font-size: 16px;
   	margin: 4px 2px;
+  	padding: 12px 24px;
+  	border-radius: 12px;
+  	font-weight: 900;
+  	cursor: pointer;
+  	border : solid grey 2px;
+  	margin-top: 80px;
+  	margin-left: 25px;
+
+}
+
+.b{
+
+	border: solid black 1px;
+	text-decoration: none;
+ 	font-size: 16px;
+  	margin: 4px 2px;
   	padding: 15px 32px;
   	border-radius: 12px;
   	font-weight: 900;
+  	cursor: pointer;
 
 }
+
+#b4{
+	margin-left: 600px;
+    margin-top: 300px;
+}
+
+
+#b3{
+	margin-left: 959px;
+    margin-bottom: 100px;
+}
+
+
+#b2{
+	margin-left: 456px;
+    /*margin-bottom: 300px;*/
+    margin-top: 100px;
+
+}
+
+#b1{
+	margin-top: 216px;
+
+}
+
+#add{
+
+	border: solid white 1px;
+	text-decoration: none;
+ 	font-size: 16px;
+  	margin: 4px 2px;
+  	padding: 8px 18px;
+  	border-radius: 12px;
+  	font-weight: 900;
+  	cursor: pointer;
+
+}
+
+
