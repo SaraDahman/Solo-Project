@@ -1,7 +1,8 @@
 var player = {
 	name: "",
 	age : 0,
-	fact : ""
+	fact : "",
+	hobby : ""
 }
 
 var result = 0;
@@ -15,10 +16,11 @@ var random = function(array){
 $('#enter').click(function(){
 	player.name = $('#name').val()
 	player.age = $('#age').val()
+	player.hobby = $('#hobby').val()
 
 	var msg = $('<div class="msg"></div>')
 
-	if($('#age').val() === '' || $('#name').val() === ""){
+	if($('#age').val() === '' || $('#name').val() === "" || $('#hobby').val() === ""){
 		alert ('please enter your info')
 	}
 	
@@ -30,7 +32,7 @@ $('#enter').click(function(){
 	msg.css('font-size' , '68px')
 	msg.css('text-alignt' , 'center')
 	msg.css('margin-top' , '0px')
-	msg.css('color' , 'white')
+	msg.css('color' , 'rgb(51, 51, 0)')
 	msg.css('cursor', 'pointer')
 	msg.css('width', '100%')
 	msg.css('height', '100%')
@@ -54,7 +56,7 @@ $('#enter').click(function(){
 	msg.css('font-size' , '68px')
 	msg.css('text-alignt' , 'center')
 	msg.css('margin-top' , '0px')
-	msg.css('color' , 'white')
+	msg.css('color' , 'rgb(51, 51, 0)')
 	msg.css('cursor', 'pointer')
 	msg.css('width', '100%')
 	msg.css('height', '100%')
@@ -109,43 +111,53 @@ $('#b4').click(function(){
 
        if(sec === -1){
 	  	$('#count').remove()
-	  	$('#fun').css('display' , 'block')
+	  	$('#quiz').css('display' , 'block')
+	  	$('#choice1').text(player.name)
 	  }
 
     }, 1000);
 
 })
 
+//////
 
-$('#add').click( function (){
-	player.fact = $('textarea').val()
-	$('#fun').remove()
-	$('#fortune').css('display' , 'block')
+var msg = $('<div id="msg"></div>')
+
+$('#ne').click( function (){	
+	$('#quiz').remove()
+	// $('#predict').css('display' , 'block')
+
+	// var msg = $('<div id="msg"></div>')
+		msg.text("Your Score will be ZERO anyway")
+	$('body').append(msg)
+	msg.css('font-size' , '68px')
+	msg.css('text-alignt' , 'center')
+	msg.css('margin-top' , '0px')
+	msg.css('color' , 'rgb(51, 51, 0)')
+	msg.css('cursor', 'pointer')
+	msg.css('width', '100%')
+	msg.css('height', '100%')
+	msg.css('top', '0')
+	msg.css('left', '0')
+	msg.css('bottom', '0')
+	msg.css('right', '0')
+	msg.css('width', '100%')
+	msg.css('height', '100%')
+	msg.css('position', 'fixed')
+	msg.css('padding-top', '349px')
+	msg.css('padding-top' , '304px')
+	msg.css('padding-left', '194px')
+	msg.css('font-weight' , '550')
+	// msg.click(off)
+	msg.click(display)
+
 })
 
+var display = function(){
+	$('#predict').css('display' , 'block')
+	$('#msg').remove()
+}
 
-var sub = ['you' , 'your life' , 'the neighbor' , 'lots of money' , 'a car' , 'cats' , 'RBK' , 'naruto']
-var verb = ['will step on' , 'will eat' , 'is going to destroy' , 'will eat' , 'will jump on' , 'will punch' , 'is going to kill' , 'will fight']
-var obj = ['you' , 'your reputation' , 'tiolet paper' , 'shoes' , 'a mountain' , 'banks' , 'us' , 'villians']
-
-
-$('#click').click(function(){
-	console.log('hi')
-	$('#spn').empty()
-	$('#spn').text(random(sub) + " " + random(verb) + " " + random(obj))
-})
-
-
-$('#next').click(function(){
-	$('#fortune').remove()
-	$('#quiz').css('display', 'block')
-	$('#choice1').text(player.name)
-})
-
-$('#ne').click(function(){
-	$('#quiz').remove();
-	$('#predict').css('display' , 'block');
-})
 
 var words =['food' , 'Sara' , 'Danger' , 'lovely', 'interesting' , 'friday' , 'sleep' , 'job']
 
@@ -158,6 +170,7 @@ $('#ad').click(function(){
 	$('#preW').val('')
 
 	if($('#one').text() === $('#preW').val()){
+		result ++
 		setTimeout(function(){
 			alert('WOOOOOOOW !!')} , 1000)
 
@@ -166,9 +179,58 @@ $('#ad').click(function(){
 			alert('Are you an idiot ?')} , 1000)
 		
 	}
-
 	
 })
+ ////////
+
+$('#next2').click(function(){
+	$('#predict').remove()
+	$('#fun').css('display' , 'block')
+})
+
+
+$('#add').click(function(){
+	player.fact = $('textarea').val()
+	if($('textarea').val() === ""){
+		alert('we need to know something about you')
+	} else {
+	$('#fun').remove()
+	$('#fortune').css('display', 'block')
+	}
+})
+
+var sub = ['you' , 'your life' , 'the neighbor' , 'lots of money' , 'a car' , 'cats' , 'RBK' , 'naruto']
+var verb = ['will step on' , 'will eat' , 'is going to destroy' , 'will eat' , 'will jump on' , 'will punch' , 'is going to kill' , 'will fight']
+var obj = ['you' , 'your reputation' , 'tiolet paper' , 'shoes' , 'a mountain' , 'banks' , 'us' , 'villians']
+
+
+$('#click').click(function(){
+	$('#spn').empty()
+	$('#spn').text(random(sub) + " " + random(verb) + " " + random(obj))
+})
+
+
+$('#next').click(function(){
+
+	$('#fortune').remove()
+	$('#final').css('display', 'block')
+	$('#name1').text(player.name);
+	$('#age1').text(player.age);
+	$('#hobby1').text(player.hobby);
+	$('#result').text(0);
+	$('#fact').text(player.fact);
+	
+})
+
+// $('#ne').click(function(){
+// 	$('#quiz').remove();
+// 	$('#predict').css('display' , 'block');
+// })
+
+
+
+
+
 
 
 

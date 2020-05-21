@@ -9,13 +9,14 @@
 	<!-- First Part -->
 	<div id='info'>
 	<label> Name </label> <input type="text"  id ='name' required="required"> <br><br>
-	<label> Age  </label> <input type="number" id ='age' required="required"> <br><br><br><br>
+	<label> Age  </label> <input type="number" id ='age' required="required"> <br><br>
+	<label> Hobby </label> <input type="text"  id ='hobby' required="required"> <br><br><br><br>
 	<button id='enter'> Enter </button>
 	</div>
 
 	<!-- second part -->
 	<div id="bts" style="display: none;">
-		<h1 style="color: white; text-align: center; font-size: 60px; margin-top: 118px" > Click on the button to start </h1> <br><br>
+		<h1 style="text-align: center; font-size: 60px; margin-top: 118px" id="h1"> Click on the button to start </h1> <br><br>
 		<button id='b1' class="b" style="display: none;"> START </button>
 		<button id='b2' class="b"> START </button>
 		<button id='b3' class="b" style="display: none;"> START </button>
@@ -27,72 +28,92 @@
 
 	<div id ="count" style="display: none; text-align: center;">
 
-	<h1 style="color: white; margin-top: 200px "> Wait for 10 seconds </h1>
-	<div id = 'countDown' style="color: white; font-size: 200px"> 10 </div>
+	<h1 style="color: rgb(51, 51, 0); margin-top: 200px; font-size: 43px;"> Wait for 10 seconds </h1>
+	<div id = 'countDown' style="color: rgb(51, 51, 0); font-size: 200px"> 10 </div>
 
     </div>
 
-    <!-- fourth part -->
+    <!-- fourth part fun fact -->
 
     <div id='fun' style="display: none; text-align: center;">
 
-    	<h1 style="color: white; text-align: center; font-size: 40px; margin-top: 118px"> Write a fun fact about you </h1>
-    <textarea id="comment" cols="45" rows="8" maxlength="65525" required="required" style=" padding: 0px 45px; margin-top: 58px; border: solid #f09d05 4px;"></textarea> <br><br>
+    	<h1 style="color: rgb(51, 51, 0); text-align: center; font-size: 40px; margin-top: 118px"> Tell us something about you </h1>
+    <textarea id="comment" cols="45" rows="8" maxlength="65525" required="required" style=" padding: 0px 45px; margin-top: 58px; border: solid #f09d05 3px; background: rgb(255,255,255,0.7);"></textarea> <br><br>
     	<button id = 'add' style="text-align: center"> Add </button>   	
     </div>
    
-    <!-- fifth part-->
+    <!-- fifth part fortune teller-->
 
     <div id = 'fortune' style="text-align: center; display: none; margin-top: 118px;">
-    	<h1 style="color: white; font-size: 53px;"> Fortune teller </h1>
-    	<p style="color: white; font-size: 20px; margin: 0px;">Click To see what it predicts </p><br><br><br>
+    	<h1 style="color: rgb(51, 51, 0); font-size: 53px;"> Fortune teller </h1>
+    	<p style="color: rgb(51, 51, 0); font-size: 20px; margin: 0px;">Click To see what it predicts </p><br><br><br>
     	<button id = 'click'> Click Here </button> <br><br><br>
-    	<span id="spn" style="border:solid orange 2px; padding: 19px 245px; background: white; font-size: 26px;"></span><br>
+    	<span id="spn" style="border:solid orange 2px; padding: 19px 245px; background: white; font-size: 26px; background: rgb(255,255,255,0.7);"></span><br>
 
 
     	<button id="next" style="margin-top: 156px;"> NEXT </button>
     	
     </div>
 
-    <!-- sixth part -->
+    <!-- sixth part quiz-->
 
-    <div id = 'quiz' style="color: white; text-align: center; display: none;">
+    <div id = 'quiz' style="color: rgb(51, 51, 0); text-align: center; display: none; font-weight: 550">
 
-    	<h1 style="font-size: 51px"> Finaaally it's time to actually play</h1>
-    	<h3>Try answering the following questions . . . prove you're smart</h3>
+    	<!-- <h1 style="font-size: 51px"> Finaaally it's time to actually play</h1> -->
+    	<h1>Try answering the following questions . . . prove you're smart</h1>
 
-    	<div class="questions" style="border: solid orange 2px; margin:50px; border-radius: 19px; background: #856d3a;">
+    	<div class="questions" style="border: solid 0px; margin:50px; border-radius: 19px; background: rgb(102, 153, 255 , 0.4); padding: 20px 20px">
     	<p style="font-size: 34px; padding: 18px 175px; margin: 0px;"> What is your name ? </p><br>
     	<input type="radio" name="choice"> <span id ='choice1' style="font-size: 22px;"></span>
-    	<input type="radio" name="choice"  value='Sara'> <span id ='choice2' style="font-size: 22px;"> Sara </span>
+    	<input type="radio" name="choice"  value='stupid'> <span id ='choice2' style="font-size: 22px;"> stupid </span>
     	<input type="radio" name="choice"  value='Sara is amazing'> <span id ='choice3' style="font-size: 22px;"> Sara is amazing </span>    	
         </div>
 
 
-        <div class="questions" style="border: solid orange 2px; margin:50px; border-radius: 19px; background: #856d3a;">
+        <div class="questions" style="border: solid 0px; margin:50px; border-radius: 19px; background: rgb(102, 153, 255 , 0.4);padding: 20px 20px">
     	<p style="font-size: 34px; padding: 18px 175px; margin: 0px;"> 2 + 2 = ? </p><br>
-    	<input type="radio" name="choice1"> <span id ='cho1' style="font-size: 37px;"> 6 </span>
-    	<input type="radio" name="choice1"> <span id ='cho2' style="font-size: 37px;"> 4 </span>
-    	<input type="radio" name="choice1"> <span id ='cho3' style="font-size: 37px;"> 22 </span>    	
+    	<input type="radio" name="choice1"> <span id ='cho1' style="font-size: 30px;"> 6 </span>
+    	<input type="radio" name="choice1"> <span id ='cho2' style="font-size: 30px;"> 4 </span>
+    	<input type="radio" name="choice1"> <span id ='cho3' style="font-size: 30px;"> 22 </span>    	
         </div>
       
 
-        <div class="questions" style="border: solid orange 2px; margin:50px; border-radius: 19px; background: #856d3a;">
+        <div class="questions" style="border: solid 0px; margin:50px; border-radius: 19px; background: rgb(102, 153, 255 , 0.4);padding: 20px 20px">
     	<p style="font-size: 34px; padding: 18px 175px; margin: 0px;"> What is tokyo called ? </p><br>
     	<input type="radio" name="choice2"> <span id ='cho4' style="font-size: 22px;"> tokyo </span>
     	<input type="radio" name="choice2"> <span id ='cho5' style="font-size: 22px;"> Tokyo </span>
     	<input type="radio" name="choice2"> <span id ='cho6' style="font-size: 22px;"> Apparently Tokyo </span>    	
         </div> <br>
-        <button id='ne'> Next </button>
+        <button id='ne'> NEXT </button>
 
     </div>
 
-    <!-- seventh part -->
-    <div id="predict" style="color: white; text-align: center; display: none;">
-    	<h1 style=" text-align: center; font-size: 40px; margin-top: 118px"> Predict the word</h1>
+    <!-- seventh part predict -->
+    <div id="predict" style="color: rgb(51, 51, 0); text-align: center; display: none;">
+    	<h1 style=" text-align: center; font-size: 55px; margin-top: 118px"> Predict the word</h1>
     	<input type="text" id="preW"> <br><br>
     	<button id='ad'> Add </button> <br><br>
-    	<div id="one" style="text-align: center; color: black;"></div> &nbsp; &nbsp; <div id='two'style="text-align: center; color: black;"></div>
+    	<div id="one" style="text-align: center; color: black;"></div> &nbsp; &nbsp; <div id='two'style="text-align: center; color: black;"></div><br><br> 
+
+    	<button id='next2'> NEXT </button>
+    </div>
+
+
+    <!-- eighth part -->
+    <div id="final" style="color: rgb(51, 51, 0); text-align: center; display: none;">
+    	<div>
+    		<h1 style="font-size: 64px;"> Player Info</h1>
+    		<div class="info"> <span style="font-size: 31px;">Name : &nbsp;</span><span id="name1" style="font-size: 31px;"></span></div><br>
+    		<div class="info"> <span style="font-size: 31px;">Age : &nbsp;</span><span id="age1" style="font-size: 31px;"></span></div><br>
+    		<div class="info"> <span style="font-size: 31px;">Fact :&nbsp;</span><span id="fact" style="font-size: 31px;"></span></div><br>
+    		<div class="info"> <span style="font-size: 31px;">Hobby :&nbsp;</span><span id="hobby1" style="font-size: 31px;"></span></div> <br>
+    		<div class="info"> <span style="font-size: 31px;">Score :&nbsp;</span><span id="result" style="font-size: 31px;"></span></div>
+    		<p id='note'> Note: You are a loser </p>
+
+    		<br><br>
+    		
+    	</div>
+    		<button id="exit"><a href="first.html"> EXIT </a></button>
     </div>
 
 <script type="text/javascript" src ="script.js"></script>
